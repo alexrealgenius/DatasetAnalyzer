@@ -28,7 +28,6 @@ The project currently:
 * Matplotlib
 * scikit-learn
 * Joblib
-* Git / GitHub
 
 ## Project Structure
 
