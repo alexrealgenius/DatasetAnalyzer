@@ -207,3 +207,10 @@ This project was created as a personal project to develop practical skills in:
 * Model evaluation
 * Software engineering
 * Git and GitHub workflows
+
+<br>
+<h1><b>Author</b></h1>
+
+[Alexander Troshin](https://github.com/alexrealgenius)
+
+[![GitHub](https://img.shields.io/badge/GitHub-alexrealgenius-181717?style=for-the-badge&logo=github)](https://github.com/alexrealgenius)
