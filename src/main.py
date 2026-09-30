@@ -1,6 +1,5 @@
 from data_loader import load_data
 from analyzer import analyze_data
-from visualizer import create_visualizations
 from trainer import train_models
 
 def main():
