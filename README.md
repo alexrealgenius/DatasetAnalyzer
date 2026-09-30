@@ -20,7 +20,7 @@ The project currently:
 * Uses the saved model to make predictions on new customers
 * Provides a churn probability for predictions
 
-## Technologies
+## Languages / Libraries
 
 * Python
 * Pandas
