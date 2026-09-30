@@ -10,6 +10,7 @@ from sklearn.metrics import accuracy_score
 
 
 def train_models(data):
+
     X = data[
         [
             "age",
@@ -20,15 +21,15 @@ def train_models(data):
         ]
     ]
 
-    Y = data["churned"]
+    y = data["churned"]
 
     # Keep the test data completely separate
-    X_train, X_test, Y_train, Y_test = train_test_split(
+    X_train, X_test, y_train, y_test = train_test_split(
         X,
-        Y,
+        y,
         test_size=0.2,
         random_state=42,
-        stratify=Y
+        stratify=y
     )
 
     models = {
@@ -57,7 +58,7 @@ def train_models(data):
         cv_scores = cross_val_score(
             model,
             X_train,
-            Y_train,
+            y_train,
             cv=5,
             scoring="accuracy"
         )
@@ -79,12 +80,12 @@ def train_models(data):
     print(f"CV Accuracy: {best_cv_score:.3f}")
 
     # Train selected model
-    best_model.fit(X_train, Y_train)
+    best_model.fit(X_train, y_train)
 
     # Final evaluation on untouched test data
     predictions = best_model.predict(X_test)
 
-    test_accuracy = accuracy_score(Y_test, predictions)
+    test_accuracy = accuracy_score(y_test, predictions)
 
     print(f"Test Accuracy: {test_accuracy:.3f}")
 

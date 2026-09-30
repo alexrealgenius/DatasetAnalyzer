@@ -5,7 +5,6 @@ from trainer import train_models
 
 def main():
     data = load_data("data/dataset.csv")
-
     analyze_data(data)
 
     create_visualizations(data)

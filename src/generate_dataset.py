@@ -3,7 +3,6 @@ import numpy as np
 
 
 def generate_dataset():
-    np.random.seed(42)
 
     number_of_customers = 1000
 
