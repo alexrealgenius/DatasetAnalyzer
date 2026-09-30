@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Trained machine learning models
+models/*.joblib
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Python test/cache files
+.pytest_cache/
+
+# Operating system files
+.DS_Store
+Thumbs.db
