@@ -7,8 +7,6 @@ def main():
     data = load_data("data/dataset.csv")
     analyze_data(data)
 
-    create_visualizations(data)
-
     train_models(data)
 
 if __name__ == "__main__":
